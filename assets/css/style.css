@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --mont: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+    --psize: 24px;
+}
+
+body {
+    font-family: var(--mont);
+    font-size: 22px;
+}
+
+.vh-r {
+    width: 100%;
+    height: 100vh;
+	background-color: var(--cream);
+}
+
+.box {
+	height:60%;
+	width: 40vh;
+}
+
+.box-left .imagess {
+	width:100%;
+	height:100%;
+	
+}
+
+.box-left {
+	position:relative;
+}
+
+
+
+.box-left .imagess-m {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+
+.btn-lg {padding: 13px 65px;}
+
+.fs-5, .fs-6 {
+	color: var(--darkGrayishBlue);
+}
+
+.first-title {
+	letter-spacing: 5px;
+}
+
+.title {
+	font-family: var(--fraunces);
+}
+
+.xprice {
+	font-family: var(--fraunces);
+}
+
+/* media gueries */
+@media (max-width: 657px) {
+	.vh-r {
+		padding: 5rem 0 !important;
+		padding-top: 2rem !important;
+	}
+	
+	.box-left {
+		border-radius: .375rem .375rem 0 0 !important; 
+	}
+	
+	.box-right {
+		border-radius: 0 0 .375rem .375rem !important; 
+	}
+	
+	.imagess {
+		border-radius: .375rem .375rem 0 0 !important; 
+	}
+	
+	.imagess-m {border-radius: .375rem .375rem 0 0 !important;}
+	.box{width: 80%; height:50%;}
+	.box-left {height: 40%;}
+	.box-right{height: 65%;}
+	
+	.box-left .imagess {display: none;}
+	.box-left .imagess-m {display: block;}
+	
+}
+
