@@ -89,10 +89,23 @@ body {
 	.imagess-m {border-radius: .375rem .375rem 0 0 !important;}
 	.box{width: 80%; height:50%;}
 	.box-left {height: 40%;}
-	.box-right{height: 65%;}
+	.box-right{height: 70%;}
 	
 	.box-left .imagess {display: none;}
 	.box-left .imagess-m {display: block;}
+
+	.description p {font-size: 18px;}
+	.btn-lg {padding: 10px 35px; margin-top: 5px;}
+	.add {margin-top: 60px;}
 	
 }
 
+@media (max-width: 374px) {
+	.description p {font-size: 12px;}
+}
+
+@media (max-height: 810px) {
+	.first-title {margin-top: 5px !important;}
+	.add {margin-top: 2px !important;}
+	.priceArea {margin-top: 2px !important;}
+}
